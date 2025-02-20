@@ -1,0 +1,136 @@
+
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.cdnfonts.com/css/chronicle-display');
+:root{
+    --main-color:#FBD784;
+}
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:Hover, a:focus{
+    color: var(--main-color);
+}
+body{
+
+    background: linear-gradient(180deg, #0B1D2600 10%, #0b1d26 90%);
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #FBD784;
+}
+#hero-section{
+   margin-top: 50px;
+}
+
+#hori-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+margin-top: 50px;
+
+}
+#hori-text p{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 14px;
+letter-spacing: -2px;
+font-family: gilrow;
+line-height: 21px;
+font-weight: 700;
+}
+#line{
+    height: 2px;
+    width: 72px;
+    background: #FBD784;
+    margin: 0 10px 16px 0;
+
+}
+#ver-line{
+    height: 140px;
+    width: 3px;
+    background: white;
+    margin-left: 10px;
+}
+#line-text{
+    color: #FBD784;
+    font-family: gilroy;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+.background-img{
+    height: 150vh;
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.062), #0b1d26), url(img/VG.png) , url(img/MG.png), 
+   url(img/cloud3.jpg);
+
+   background-position:0px 0px, 0px 550px, 0px 300px, 0px 0px;
+   background-repeat: no-repeat;
+   background-size: 100%;
+   color: white;
+}
+
+#main-section2{
+    background: #0b1d26;
+
+}
+.content{
+    width: 60%;
+}
+.read-more a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.read-more a:hover{
+    color: white;
+    text-decoration: none;
+}
+.number{
+    font-size: 100px;
+    position: absolute;
+    top: -60px;
+    left: -60px;
+font-weight: 800;
+opacity: .2;
+}
+
+#main-footer{
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: var(--main-color);
+    }
+    b{
+        color: var(--main-color);
+    }
+}
+#copyright{
+    color: rgb(172, 170, 170);
+}
+
+@media screen and (max-width: 767px) {
+    #hori-text{
+        display: none;
+    }
+    #num-slider{
+        display: none!important;
+    }
+    #section1, #section2, #section3{
+        padding: 0 !important;
+    }
+    #section2-left{
+        padding: 0 !important;
+    }
+}
+
