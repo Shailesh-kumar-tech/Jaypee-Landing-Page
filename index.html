@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MNTN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+      @import url("https://fonts.cdnfonts.com/css/chronicle-display");
+      :root {
+        --main-color: #fbd784;
+      }
+      * {
+        color: white;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: var(--main-color);
+        }
+      }
+      body {
+        background: linear-gradient(180deg, #0b1d2600 10%, #0b1d26 90%);
+      }
+
+      .nav-link {
+        color: white;
+      }
+      .nav-link:focus,
+      .nav-link:hover {
+        color: #fbd784;
+      }
+      #hero-section {
+        margin-top: 50px;
+      }
+
+      #hori-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        margin-top: 50px;
+      }
+      #hori-text p {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-size: 14px;
+        letter-spacing: -2px;
+        font-family: gilrow;
+        line-height: 21px;
+        font-weight: 700;
+      }
+      #line {
+        height: 2px;
+        width: 72px;
+        background: #fbd784;
+        margin: 0 10px 16px 0;
+      }
+      #ver-line {
+        height: 140px;
+        width: 3px;
+        background: white;
+        margin-left: 10px;
+      }
+      #line-text {
+        color: #fbd784;
+        font-family: gilroy;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+      }
+      .background-img {
+        height: 150vh;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.062),
+            #0b1d26
+          ),
+          url(img/VG.png), url(img/MG.png), url(img/cloud3.jpg);
+
+        background-position: 0px 0px, 0px 550px, 0px 300px, 0px 0px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: white;
+      }
+
+      #main-section2 {
+        background: #0b1d26;
+      }
+      .content {
+        width: 60%;
+      }
+      .read-more a {
+        color: var(--main-color);
+        text-decoration: none;
+      }
+      .read-more a:hover {
+        color: white;
+        text-decoration: none;
+      }
+      .number {
+        font-size: 100px;
+        position: absolute;
+        top: -60px;
+        left: -60px;
+        font-weight: 800;
+        opacity: 0.2;
+      }
+
+      #main-footer {
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        a:hover {
+          color: var(--main-color);
+        }
+        b {
+          color: var(--main-color);
+        }
+      }
+      #copyright {
+        color: rgb(172, 170, 170);
+      }
+      @media screen and (max-width: 990px){
+        .background-img {
+            height: auto;
+        }
+        #section1,
+        #section2,
+        #section3 {
+          padding: 0 !important;
+          padding-top: 50px !important;
+        }
+        #section2-left {
+          padding: 0 !important;
+        }
+        .content{
+            /* margin-top: 0!important; */
+            padding-top: 50px !important;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .background-img {
+            height: auto;
+        }
+        #hori-text {
+          display: none;
+        }
+        #num-slider {
+          display: none !important;
+        }
+        
+        #section1,
+        #section2,
+        #section3 {
+          padding: 0 !important;
+          padding-top: 50px !important;
+        }
+        #section2-left {
+          padding: 0 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-img">
+      <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/Logo.svg" alt="" width="70" height="30" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Experiment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-regular fa-circle-user me-1"></i>Account</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero-section  -->
+      <div class="container" id="hero-section">
+        <div class="row">
+          <div class="col-1" id="hori-text">
+            <p>Follow Us</p>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+          </div>
+
+          <div class="col-sm-10 col-lg-6 col-md-6 mx-auto mt-5">
+            <div class="d-flex align-items-center">
+              <div id="line"></div>
+              <p id="line-text">A Hiking guide</p>
+            </div>
+            <h1 id="head-text">
+              Be prepared for the <br />
+              Mountains and beyond!
+            </h1>
+            <p class="mt-4"><a href="#main-footer"> Scroll Down &darr; </a></p>
+          </div>
+
+          <div class="col-1 me-0 d-flex mt-5" id="num-slider">
+            <div>
+              <p>Start</p>
+              <p class="text-end"><a href="#section1"> 01 </a></p>
+              <p class="text-end"><a href="#section2"> 02 </a></p>
+              <p class="text-end"><a href="#section3"> 03 </a></p>
+            </div>
+            <div id="ver-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 2  -->
+    <div class="container-fluid" id="main-section2">
+      <div class="container p-5 section2" id="section1">
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-8 col-lg-8 p-5 animate__animated animate__fadeInLeft animate__delay-2s"
+            id="section2-left"
+          >
+            <div class="content position-relative mx-auto mt-5">
+              <div class="d-flex align-items-center">
+                <div id="line"></div>
+                <p id="line-text">Get Started</p>
+              </div>
+              <h2 id="head-text">What level of hiker are you?</h2>
+              <p>
+                Determining what level of hiker you are can be an important tool
+                when planning future hikes. This hiking level guide will help
+                you plan hikes according to different hike ratings set by
+                various websites like All Trails and Modern Hiker. What type of
+                hiker are you – novice, moderate, advanced moderate, expert, or
+                expert backpacker?
+              </p>
+              <p class="read-more"><a href="">Read More &rarr;</a></p>
+              <p class="number">O1</p>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-4 animate__animated animate__fadeInRight animate__delay-2s"
+            id="section2-right"
+          >
+            <img class="img-fluid me-0" src="img/01.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- section 3 -->
+      <div class="container px-5 section2" id="section2">
+        <div class="row">
+          <div
+            class="col-sm-4 animate__animated animate__fadeInLeft animate__delay-4s"
+            id="section2-right"
+          >
+            <img class="img-fluid me-0" src="img/01.png" alt="" />
+          </div>
+          <div
+            class="col-sm-8 p-5 animate__animated animate__fadeInRight animate__delay-4s"
+            id="section2-left"
+          >
+            <div class="content position-relative mx-auto mt-5">
+              <div class="d-flex align-items-center">
+                <div id="line"></div>
+                <p id="line-text">Hiking Essentials</p>
+              </div>
+              <h2 id="head-text">Picking the right Hiking Gear!</h2>
+              <p>
+                The nice thing about beginning hiking is that you don’t really
+                need any special gear, you can probably get away with things you
+                already have. Let’s start with clothing. A typical mistake
+                hiking beginners make is wearing jeans and regular clothes,
+                which will get heavy and chafe wif they get sweaty or wet.
+              </p>
+              <p class="read-more"><a href="">Read More &rarr;</a></p>
+              <p class="number">O2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section 4  -->
+
+      <div class="container position-relative px-5 section2" id="section3">
+        <div class="row">
+          <div
+            class="col-sm-8 p-5 animate__animated animate__fadeInLeft animate__delay-5s"
+            id="section2-left"
+          >
+            <div class="content position-relative mx-auto mt-5">
+              <div class="d-flex align-items-center">
+                <div id="line"></div>
+                <p id="line-text">where you go is the key</p>
+              </div>
+              <h2 id="head-text">Understand Your Map & Timing</h2>
+              <p>
+                To start, print out the hiking guide and map. If it’s raining,
+                throw them in a Zip-Lock bag. Read over the guide, study the
+                map, and have a good idea of what to expect. I like to know what
+                my next landmark is as I hike. For example, I’ll read the guide
+                and know that say, in a mile, I make a right turn at the
+                junction..
+              </p>
+              <p class="read-more"><a href="">Read More &rarr;</a></p>
+              <p class="number">O3</p>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-4 animate__animated animate__fadeInRight animate__delay-5s"
+            id="section2-right"
+          >
+            <img class="img-fluid me-0" src="img/01.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- footer start  -->
+
+      <div class="container py-5 my-5" id="main-footer">
+        <div class="row footer pt-5">
+          <div class="col-sm-8 mx-auto">
+            <img src="img/Logo.svg" alt="" width="70" height="30" />
+            <p>
+              Get out there & discover your next <br />
+              slope, mountain & destination!
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <p><b> More on The Blog </b></p>
+            <p><a href="">About MNTN</a></p>
+            <p><a href="">Contributors & Writers</a></p>
+            <p><a href="">Write For Us</a></p>
+            <p><a href="">Contact Us</a></p>
+            <p><a href="">Privay policy</a></p>
+          </div>
+          <div class="col-sm-2">
+            <p><b> More on MNTN </b></p>
+            <p><a href="">The Team</a></p>
+            <p><a href="">Jobs</a></p>
+            <p><a href="">Press</a></p>
+          </div>
+        </div>
+        <p id="copyright">Copyright 2025 MNTN, Inc. Terms & Privacy</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
