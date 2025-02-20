@@ -70,8 +70,8 @@ font-weight: 700;
 }
 .background-img{
     height: 150vh;
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.062), #0b1d26), url(img/VG.png) , url(img/MG.png), 
-   url(img/cloud3.jpg);
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.062), #0b1d26), url(VG.png) , url(MG.png), 
+   url(cloud3.jpg);
 
    background-position:0px 0px, 0px 550px, 0px 300px, 0px 0px;
    background-repeat: no-repeat;
